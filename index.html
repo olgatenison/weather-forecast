@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <header class="header header__container">
+      <h1 class="header__title">Weather Forecast</h1>
+      <form class="header__form" id="form">
+        <input
+          id="inputCity"
+          class="header__input"
+          type="text"
+          placeholder="Enter city name"
+        />
+        <button class="header__submit">Get Weather</button>
+      </form>
+    </header>
+    <main class="main main__container">
+      <div class="main__card card">
+        <h2 class="card__city">London</h2>
+        <div class="card__weather">
+          <div class="card__temp">11<sub>°C</sub></div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
