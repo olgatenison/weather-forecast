@@ -18,7 +18,7 @@ form.onsubmit = function (e) {
   // робимо запрос на сервер для отримання погоди
   // адреса запросу
 
-  const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
   //виконуємо запрос
 
