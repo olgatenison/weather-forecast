@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Weather Forecast</title>
   </head>
+
   <body>
-    <header class="header header__container">
+    <div class="wrapper">
+    <header class="header container">
       <h1 class="header__title">Weather Forecast</h1>
       <form class="header__form" id="form">
         <input
@@ -15,16 +26,31 @@
           type="text"
           placeholder="Enter city name"
         />
-        <button class="header__submit">Get Weather</button>
+        <button class="header__submit"></button>
       </form>
     </header>
-    <main class="main main__container">
+    <main class="main container">
       <div class="main__card card">
+        <p class="card__country">Great Britain</p>
         <h2 class="card__city">London</h2>
         <div class="card__weather">
-          <div class="card__temp">11<sub>°C</sub></div>
+          <div class="card__left">
+            <div class="card__temp-c">11<span class="up">°C</span></div>
+            <p class="card__condition">sunny</p>
+          </div>
+          <div class="card__right">
+            <div class="card__feels">
+              <p class="card__text-f">feels like</p>
+              <div class="card__temp-f">13<top>°C</top></div>
+            </div>
+            <div class="card__humidity">
+              <p class="card__text-h">humidity</p>
+              <div class="card__temp-h">11 %</div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
     </main>
     <script src="./js/index.js"></script>
   </body>
