@@ -4,7 +4,7 @@ const apiKey = "b5bd57ab41214874802111150232306";
 // const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 
 /*Отримуємо значення з форми*/
-const header = document.querySelector(".header");
+const main = document.querySelector(".main");
 const form = document.querySelector("#form");
 
 const input = document.querySelector("#inputCity");
@@ -36,7 +36,7 @@ form.onsubmit = function (e) {
       const temp = data.current.temp_c;
       const feelsTemp = data.current.feelslike_c;
       const clouds = data.current.condition.text;
-      const humidity = data.current.condition.humidity;
+      const humidity = data.current.humidity;
 
       // відображаємо в картці
       // розмітка для картки
@@ -63,6 +63,6 @@ form.onsubmit = function (e) {
     </div>`;
 
       //відображаємо картку на сторінці
-      header.insertAdjacentHTML(afterend, html);
+      main.insertAdjacentHTML("afterbegin", html);
     });
 };

@@ -205,25 +205,27 @@ body {
 }
 .card__city {
   color: var(--txt-orange);
-  font-size: 30px;
+  font-size: 35px;
   font-family: Montserrat;
   font-weight: 700;
 }
 .card__weather {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 .card__left {
+  max-width: 150px;
 }
 .card__temp-c {
-  font-size: 80px;
+  font-size: 60px;
+  margin-bottom: 10px;
 }
 .up {
-  font-size: 40px;
+  font-size: 30px;
 }
 .card__condition {
-  font-size: 24px;
+  font-size: 18px;
   color: var(--txt-orange);
 }
 .card__right {
@@ -239,7 +241,7 @@ body {
 }
 .card__temp-f {
   text-align: center;
-  font-size: 32px;
+  font-size: 25px;
   margin-bottom: 23px;
   position: relative;
 }
