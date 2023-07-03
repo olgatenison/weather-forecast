@@ -198,12 +198,21 @@ body {
   width: 100%;
   border-radius: 25px;
 }
-
+.card__massage {
+  font-size: 18px;
+  padding-bottom: 8px;
+}
 .card__country {
   font-size: 18px;
   padding-bottom: 8px;
 }
 .card__city {
+  color: var(--txt-orange);
+  font-size: 35px;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+.card__title {
   color: var(--txt-orange);
   font-size: 35px;
   font-family: Montserrat;

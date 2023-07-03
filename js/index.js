@@ -24,6 +24,9 @@ form.onsubmit = function (e) {
 
   fetch(url)
     .then((response) => {
+      if (!response.ok) {
+        throw new Error("Something went wrong. City is not found");
+      }
       return response.json();
     })
     .then((data) => {
@@ -44,8 +47,8 @@ form.onsubmit = function (e) {
       // розмітка для картки
       const html = `
         <div class="main__card card">
-        <p class="card__country">${country}</p>
-        <h2 class="card__city">${city}</h2>
+        <p class="card__country card__massage ">${country}</p>
+        <h2 class="card__city card__title">${city}</h2>
         <div class="card__weather">
           <div class="card__left">
             <div class="card__temp-c">${temp}<span class="up">°C</span></div>
@@ -63,6 +66,23 @@ form.onsubmit = function (e) {
           </div>
         </div>
       </div>`;
+
+      //відображаємо картку на сторінці
+      main.insertAdjacentHTML("afterbegin", html);
+    })
+    .catch((error) => {
+      console.log(error.message);
+      // Здесь можно добавить логику для обработки ошибки, например, показать сообщение об ошибке на странице// видаляємо наявні картки
+      const prevCard = document.querySelector(".card");
+      if (prevCard) prevCard.remove();
+
+      const html = `
+      <div class="main__card card error">
+      <h2 class="card__title">Error</h2>
+      <p class="card__massage">${error.message}</p>
+      
+      
+    </div>`;
 
       //відображаємо картку на сторінці
       main.insertAdjacentHTML("afterbegin", html);
