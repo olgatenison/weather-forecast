@@ -1,6 +1,6 @@
  <p align="center">
      <img src="sourse/prew.jpg" width="700" alt="Project Preview">
-   </p>
+</p>
    
 # Weather Forecast
 
