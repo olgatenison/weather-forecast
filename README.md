@@ -1,7 +1,8 @@
  <p align="center">
      <img src="sourse/prew.jpg" width="700" alt="Project Preview">
    </p>
-## Weather Forecast
+   
+# Weather Forecast
 
 Weather Forecast is a web application that provides real-time weather information for a selected city. Users can input the name of a city in the provided form, and the application will send a request to a weather API to fetch and display the current temperature, feels like temperature, cloud conditions, and humidity. The application is built using HTML, CSS, and JavaScript and integrates with a weather API to retrieve weather data. The design of the user interface, including its mobile-responsive layout, was developed by me.
 
